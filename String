@@ -1,0 +1,11 @@
+def convert(string):
+    if len(string) > 10:
+        first = string[0]
+        last = string[-1]
+        middle = len(string) - 2
+        return first + str(middle) + last
+    else:
+        return string
+
+string = input()
+print(convert(string))
